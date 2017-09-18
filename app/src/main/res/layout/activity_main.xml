@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.chandrassekhar.calculator.MainActivity">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0"
+        android:layout_weight="3"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:textAlignment="textEnd"
+        android:layout_gravity="end"
+/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/seven"
+                android:textSize="35dp"
+                android:onClick="onClickNumber"
+                android:background="@drawable/roundbutton"
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/four"
+                android:background="@drawable/roundbutton"
+
+                android:onClick="onClickNumber"
+
+                android:textSize="35dp"
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one"
+                android:textSize="35dp"
+                android:onClick="onClickNumber"
+
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c"
+                android:textSize="35dp"
+                android:onClick="onClickClear"
+                android:background="@drawable/roundbutton2"
+
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/eight"
+                android:onClick="onClickNumber"
+
+                android:background="@drawable/roundbutton"
+
+                android:textSize="35dp"
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/five"
+                android:background="@drawable/roundbutton"
+
+                android:textSize="35dp"
+                android:onClick="onClickNumber"
+
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two"
+                android:textSize="35dp"
+                android:onClick="onClickNumber"
+
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zero"
+                android:textSize="35dp"
+                android:onClick="onClickNumber"
+
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nine"
+                android:onClick="onClickNumber"
+
+                android:background="@drawable/roundbutton"
+
+                android:textSize="35dp"
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/six"
+                android:textSize="35dp"
+                android:onClick="onClickNumber"
+
+                android:background="@drawable/roundbutton"
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three"
+                android:textSize="35dp"
+                android:onClick="onClickNumber"
+
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/equal"
+                android:onClick="onClickEqual"
+                android:textSize="35dp"
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/minus"
+                android:onClick="onClickOperator"
+                android:textSize="35dp"
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plus"
+                android:onClick="onClickOperator"
+
+                android:textSize="35dp"
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/multiplication"
+                android:onClick="onClickOperator"
+
+                android:textSize="35dp"
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/division"
+                android:onClick="onClickOperator"
+
+                android:textSize="35dp"
+                android:background="@drawable/roundbutton"
+
+
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
